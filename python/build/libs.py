@@ -107,3 +107,18 @@ boost = BoostProject(
     '5fb94629535c19e48703bdb2b2e9490f',
     'include/boost/version.hpp',
 )
+
+libnfs = AutotoolsProject(
+    'https://sites.google.com/site/libnfstarballs/li/libnfs-1.11.0.tar.gz',
+    'a1b5a5fe925030a84c3188b23960f4c9',
+    'lib/libnfs.a',
+    ['--disable-shared', '--enable-static'],
+)
+
+libmpdclient = AutotoolsProject(
+    'http://www.musicpd.org/download/libmpdclient/2/libmpdclient-2.10.tar.xz',
+    '00606c630b905aa6196330373b366c29',
+    'lib/libmpdclient.a',
+    ['--disable-shared', '--enable-static'],
+)
+

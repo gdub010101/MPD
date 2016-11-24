@@ -113,6 +113,8 @@ thirdparty_libs = [
     ffmpeg,
     curl,
     boost,
+    libnfs,
+    libmpdclient
 ]
 
 # build the third-party libraries
